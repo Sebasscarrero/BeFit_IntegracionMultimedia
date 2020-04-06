@@ -1,0 +1,47 @@
+.LogoText{
+    font-family: 'Poppins';
+}
+.RobotoThinItalic{
+    font-family: 'RobotoThinItalic';
+}
+.RobotoLightItalic{
+    font-family: 'RobotoLightItalic';
+}
+ion-toolbar{
+    --min-height: 90px !important;
+}
+ion-menu{
+    --max-width: 220px !important;
+}
+.none{
+    display: block !important;
+}
+.block{
+    display: none !important;
+}
+ion-icon.none{
+    display: none !important;
+}
+ion-icon.block{
+    display: block !important;
+}
+ion-label{
+    font-size: 12px !important;
+}
+ion-item-divider{
+    min-height: 0px !important;
+}
+ion-item{
+    --min-height:20px !important;
+}
+ion-icon{
+    margin-right: 8% !important;
+}
+ion-text.slogan{
+    font-size: 13px !important;
+    display: block !important;
+    margin-top: -15px !important;
+}
+ion-title{
+    font-size: 45px !important;
+}

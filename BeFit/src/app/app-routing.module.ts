@@ -2,23 +2,33 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'inicio', pathMatch: 'full' },
   {
-    path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+    path: 'inicio',
+    loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
   },
   {
-    path: 'tab4',
-    loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
+    path: 'registro',
+    loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule)
   },
   {
-    path: 'tab5',
-    loadChildren: () => import('./tab5/tab5.module').then( m => m.Tab5PageModule)
-  }
+    path: 'password',
+    loadChildren: () => import('./pages/password/password.module').then( m => m.PasswordPageModule)
+  },
+  {
+    path: 'ejercicios',
+    loadChildren: () => import('./pages/ejercicios/ejercicios.module').then( m => m.EjerciciosPageModule)
+  },
+  {
+    path: 'polea-apecho',
+    loadChildren: () => import('./pages/polea-apecho/polea-apecho.module').then( m => m.PoleaAPechoPageModule)
+  },
 ];
+
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

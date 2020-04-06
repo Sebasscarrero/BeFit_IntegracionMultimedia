@@ -1,0 +1,19 @@
+<ion-menu side="start" menuId="first" contentId="main" class="my-custom-menu">
+  <ion-header>
+    <ion-toolbar color="PurpleLight">
+      <ion-title color="LogoGreenLight" class="LogoText ion-text-center ion-padding-top"><ion-text color="LogoGreenDark">B</ion-text>e<ion-text color="LogoGreenDark">F</ion-text>it</ion-title>
+      <ion-text color="light" class="RobotoThinItalic slogan ion-text-center ion-padding-bottom ion-margin-bottom"> El cambio es posible </ion-text>
+    </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+
+        <ion-item *ngFor="let c of componentes" lines="none">
+          <ion-icon [class]="c.divider" slot="start" [src]="c.icon"></ion-icon> 
+          <ion-label class="RobotoLightItalic" color="medium"> {{ c.name }} </ion-label> 
+          <ion-item-divider [class]="c.divider"> </ion-item-divider>
+        </ion-item>
+        
+      </ion-list>
+    </ion-content>
+  </ion-menu>

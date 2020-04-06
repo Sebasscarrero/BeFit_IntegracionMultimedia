@@ -1,0 +1,58 @@
+.LogoText{
+    font-family: 'Poppins';
+}
+ion-toolbar{
+    --min-height:25px!important;
+}
+ion-item.NavegadorTab{
+    --min-height: 32px !important;
+}
+ion-item{
+    --border-color: none!important;
+    --border-radius: none!important;
+    --border-style: none!important;
+    --border-width: none!important;
+    --padding-bottom:0px!important;
+    --padding-top:0px!important;
+    --inner-padding-top:0px!important;
+    --inner-padding-bottom:0px!important;
+
+}
+ion-button{
+    --padding-bottom:0px!important;
+    --padding-top:0px!important;
+}
+.RobotoRegular{
+    font-family: 'RobotoRegular' !important;
+    text-align: center !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+ion-label{
+    font-size: 9px !important;
+    
+}
+ion-searchbar{
+    --background: rgba(var(--ion-color-dark-rgb), 0.25);
+    --box-shadow: none;
+    transform: scale(0.8);
+    --icon-color:white;
+}
+ion-toolbar.top{
+    --background:radial-gradient(#00e091 0%, #14825b 100%);
+}
+ion-icon{
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 50px;
+}
+ion-item-divider.MyDivider{
+    --inner-padding-bottom: 0px !important;
+    --inner-padding-top: 0px !important;
+    --padding-bottom: 0px !important;
+    --padding-top: 0px !important;
+    padding-left: 0px !important;
+    min-height: 2px !important;
+    width: 92% !important;
+    position: absolute !important;
+    left: 4% !important;
+}

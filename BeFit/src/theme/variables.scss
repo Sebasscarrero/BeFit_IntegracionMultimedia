@@ -74,15 +74,68 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /**Logo**/
+  --ion-color-LogoGreenDark: #009d66;
+  --ion-color-LogoGreenDark-rgb: 0,157,102;
+  --ion-color-LogoGreenLight: #00e091;
+  --ion-color-LogoGreenLight-rgb: 0,224,145;
+
+  /**GreenButtons**/
+  --ion-color-GreenIcons: #00a547;
+  --ion-color-GreenIcons-rgb: 0,165,71;
+
+  --ion-color-GreenButtons: #14825b;
+  --ion-color-GreenButtons-rgb: 20,130,91;
+
+  /**Purple Background**/
+
+  --ion-color-PurpleDark: #230635;
+  --ion-color-PurpleDark-rgb: 35,6,53;
+
+  --ion-color-PurpleLight: #3e1668;
+  --ion-color-PurpleLight-rgb: 62,22,104;
+
+  /**VerdeNavBar**/
+  --ion-color-VerdeNavBar: #006b4f;
+  --ion-color-VerdeNavBar-rgb: 0,107,79;
 }
 
-@media (prefers-color-scheme: dark) {
+.ion-color-LogoGreenDark {
+  --ion-color-base: var(--ion-color-LogoGreenDark) !important;
+  --ion-color-base-rgb: var(--ion-color-LogoGreenDark-rgb) !important;
+}
+.ion-color-LogoGreenLight {
+  --ion-color-base: var(--ion-color-LogoGreenLight) !important;
+  --ion-color-base-rgb: var(--ion-color-LogoGreenLight-rgb) !important;
+}
+.ion-color-GreenIcons {
+  --ion-color-base: var(--ion-color-GreenIcons) !important;
+  --ion-color-base-rgb: var(--ion-color-GreenIcons-rgb) !important;
+}
+.ion-color-GreenButtons {
+  --ion-color-base: var(--ion-color-GreenButtons) !important;
+  --ion-color-base-rgb: var(--ion-color-GreenButtons-rgb) !important;
+}
+.ion-color-PurpleDark {
+  --ion-color-base: var(--ion-color-PurpleDark) !important;
+  --ion-color-base-rgb: var(--ion-color-PurpleDark-rgb) !important;
+}
+.ion-color-PurpleLight {
+  --ion-color-base: var(--ion-color-PurpleLight) !important;
+  --ion-color-base-rgb: var(--ion-color-PurpleLight-rgb) !important;
+}
+.ion-color-VerdeNavBar {
+  --ion-color-base: var(--ion-color-VerdeNavBar) !important;
+  --ion-color-base-rgb: var(--ion-color-VerdeNavBar-rgb) !important;
+}
+//@media (prefers-color-scheme: dark) {
   /*
    * Dark Colors
    * -------------------------------------------
    */
 
-  body {
+/*   body {
     --ion-color-primary: #428cff;
     --ion-color-primary-rgb: 66,140,255;
     --ion-color-primary-contrast: #ffffff;
@@ -145,14 +198,14 @@
     --ion-color-light-contrast-rgb: 255,255,255;
     --ion-color-light-shade: #1e2023;
     --ion-color-light-tint: #383a3e;
-  }
+  } */
 
   /*
    * iOS Dark Theme
    * -------------------------------------------
    */
 
-  .ios body {
+/*   .ios body {
     --ion-background-color: #000000;
     --ion-background-color-rgb: 0,0,0;
 
@@ -181,9 +234,8 @@
 
     --ion-toolbar-background: #0d0d0d;
 
-    --ion-item-background: #1c1c1c;
-    --ion-item-background-activated: #313131;
-  }
+    --ion-item-background: #000000;
+  } */
 
 
   /*
@@ -191,7 +243,7 @@
    * -------------------------------------------
    */
 
-  .md body {
+/*   .md body {
     --ion-background-color: #121212;
     --ion-background-color-rgb: 18,18,18;
 
@@ -220,10 +272,14 @@
     --ion-color-step-900: #e7e7e7;
     --ion-color-step-950: #f3f3f3;
 
-    --ion-item-background: #1A1B1E;
-  }
+    --ion-item-background: #1e1e1e;
 
-  ion-title.title-large {
+    --ion-toolbar-background: #1f1f1f;
+
+    --ion-tab-bar-background: #1f1f1f;
+  } */
+
+/*   ion-title.title-large {
     --color: white;
-  }
-}
+  } */
+//}
